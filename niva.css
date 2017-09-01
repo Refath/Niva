@@ -131,6 +131,7 @@ body{
 	animation-duration:30s;
 }
 
+
 @keyframes around{
 	0% {transform: rotate(0deg);}
 	25%	{transform: rotate(90deg);}
@@ -198,7 +199,7 @@ background-color:lightgreen;
 	float:right;
   overflow: hidden;
   position: relative;
-  height: 50px;
+  height: 60px;
 }
 
 .inside{
@@ -206,7 +207,7 @@ background-color:lightgreen;
   color: lightblue;
   position: relative;
   white-space: nowrap;
-  top: 0;
+  top: 0px;
   left: 0;
   animation: move 5s;
   animation-iteration-count: infinite;
@@ -215,8 +216,8 @@ background-color:lightgreen;
 
 @keyframes move {
 0%  { top: 0px; }
-20% { top: -50px; }
-40% { top: -100px; }
+20% { top: -70px; }
+40% { top: -135px; }
 60% { top: -150px; }
 80% { top: -200px; }
 }
