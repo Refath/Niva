@@ -24,8 +24,8 @@ $(document).ready(function(){
 $('.r1c').css('background-image', 'url(' + imageUrl + ')');
 				});
 			});
-
-});
+	
+}); 
 
 $(document).ready(function(){
       $(".ytext").keyup(function(){
@@ -36,7 +36,7 @@ $(document).ready(function(){
   imageUrl="http://s2.googleusercontent.com/s2/favicons?domain_url="+newimg;
 $('.r2c').css('background-image', 'url(' + imageUrl + ')');});
      });
-});
+}); 
 
 $(document).ready(function(){
       $(".atext").keyup(function(){
@@ -47,7 +47,7 @@ $(document).ready(function(){
   imageUrl="http://s2.googleusercontent.com/s2/favicons?domain_url="+newimg;
 $('.r3c').css('background-image', 'url(' + imageUrl + ')');});
      });
-});
+}); 
 
 $(document).ready(function(){
       $(".ftext").keyup(function(){
@@ -59,3 +59,23 @@ $(document).ready(function(){
 $('.r4c').css('background-image', 'url(' + imageUrl + ')');});
      });
 });
+
+/**$('.noRotate').click ( function(){
+		function stopAnimation(".parent")
+{
+    $('.parent').css("-webkit-animation", "none");
+    $('.parent').css("animation", "none");
+}
+});**/
+
+(function( $ ) {
+	$(function() {
+		$( "#stop" ).click(function() {
+			$( ".parent, .r1c, .r2c, .r3c, .r4c" ).addClass( "off" );
+		});
+		$( "#start" ).click(function() {
+			$( ".parent, .r1c, .r2c, .r3c, .r4c"  ).removeClass( "off" );
+		});
+	});
+
+})( jQuery );
