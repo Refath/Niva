@@ -11,10 +11,10 @@ body{
 	height: 90px;
 	border-radius: 90px;
 	fill: lightred;
-
+	
 	position: absolute;
 	margin: auto;
-
+	
 	background-size: 100px 100px;
 	background-repeat: no-repeat;
 	background-position: -5px -5px;
@@ -27,8 +27,17 @@ body{
 }
 
 .r1c, .r2c, .r3c, .r4c {
-	animation: around 29.9s infinite ease-in;
-	animation-direction:reverse
+	animation: around 29.9s infinite ease-in; 	 
+	animation-direction:reverse;
+}
+
+.r1c.off, .r2c.off, .r3c.off, .r4c.off {
+	
+   -ms-animation-play-state:paused;
+   -o-animation-play-state:paused;
+   -moz-animation-play-state:paused;
+   -webkit-animation-play-state:paused;
+  animation-play-state: paused;
 }
 
 .circle{
@@ -45,10 +54,10 @@ body{
 	background-position: -5.4px -5.4px;
 }
 
-.r1c{
+.r1c{	
 	position: relative;
 	overflow: hidden;
-
+	
 	top: 200px;
 	background-image: url("http://icons.iconarchive.com/icons/xenatt/the-circle/512/App-Google-icon.png");
 }
@@ -60,7 +69,7 @@ body{
 
 .r3c{
 	left: 400px;
-	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png);
+	background-image: url(https://cdn.worldvectorlogo.com/logos/facebook-3.svg);
 }
 
 .r4c{
@@ -74,10 +83,10 @@ body{
 	height: 90px;
 	border-radius: 90px;
 	fill: lightred;
-
+	
 	position: absolute;
 	margin: auto;
-
+	
 	top: 0px;
 	bottom: 0px;
 	left: 0px;
@@ -94,15 +103,23 @@ body{
 .r3l{
 	width: 90px;
 	height: 0px;
-
+	
 	left: 200px;
 }
 
 .r4l{
 	width: 90px;
 	height: 0px;
-
+	
 	left: -200px;
+}
+
+.parent.off {
+   -ms-animation-play-state:paused;
+   -o-animation-play-state:paused;
+   -moz-animation-play-state:paused;
+   -webkit-animation-play-state:paused;
+  animation-play-state: paused;
 }
 
 .parent {
@@ -110,19 +127,20 @@ body{
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
-	animation: around 30s infinite ease;
+	animation: around ease;
+	animation-duration:30s;
 }
 
 @keyframes around{
 	0% {transform: rotate(0deg);}
 	25%	{transform: rotate(90deg);}
-
+	
 	25% {transform: rotate(90deg);}
 	50%	{transform: rotate(180deg);}
-
+	
 	50% {transform: rotate(180deg);}
 	75%	{transform: rotate(270deg);}
-
+	
 	75% {transform: rotate(270deg);}
 	100%	{transform: rotate(360deg);}
 	}
@@ -137,11 +155,11 @@ body{
 }
 
 #narrow{
-	color:white;
+	color:white;	
 	font-size: 60px;
 	flex: 0.5;
 	font-family: 'Quicksand', sans-serif;
-
+	
   background: lightblue;
 	background-color:rgba(51,153,255,0.8);
 }
@@ -153,76 +171,54 @@ body{
 	font-family: 'Quicksand', sans-serif;
 }
 .rotate-text{
-	color:white;
+	color:white;	
 	font-size: 60px;
 	flex: 0.5;
 	font-family: 'Quicksand', sans-serif;
-
+	
   background: lightblue;
 	background-color:rgba(51,153,255,0.8);
 }
 
 #parent {
   display: flex;
+	background-color:red;
 }
-.inside{
-	color:rgba(153,254,255,1);
 
-
-}
+.juan {
+	font: 40px/50px Arial;
+	text-align:center;
+};
 .rotate-text {
-  font: normal 2.5em/1.2 sans-serif;
-  background-color: rgba(51,153,255,0.65);
-	color:rgba(153,254,255,0.75);
-  height: 1.2em;
-  width: 100%;
-  position: relative;
+display:inline-block;
+background-color:lightgreen;
+}
+
+.rotating{
+	float:right;
   overflow: hidden;
-  padding: 0 0 .1em 0;
+  position: relative;
+  height: 50px;
 }
-.rotate-text > span {
-  float: left;
-  margin-right: .3em;
-  height: 1.2em;
-}
-.rotate-text > span:last-of-type {
-  font-weight: 500;
-  display: inline-block;
-  color: red;
+
+.inside{
+	display: inline-block;
+  color: lightblue;
   position: relative;
   white-space: nowrap;
-  bottom: 0;
+  top: 0;
   left: 0;
-  animation: ticker 10s;
+  animation: move 5s;
   animation-iteration-count: infinite;
-  animation-delay: 4s;
+	animation-delay: 1s;
 }
 
-@keyframes ticker {
-  0% {
-    bottom: 0;
-  }
-  10% {
-    bottom: 0;
-  }
-  20% {
-    bottom: 1.2em;
-  }
-  30% {
-    bottom: 1.2em;
-  }
-  40% {
-    bottom: 2.4em;
-  }
-  50% {
-    bottom: 2.4em;
-  }
-  60% {
-    bottom: 3.6em;
-  }
-  70% {
-    bottom: 3.6em;
-  }
+@keyframes move {
+0%  { top: 0px; }
+20% { top: -50px; }
+40% { top: -100px; }
+60% { top: -150px; }
+80% { top: -200px; }
 }
 
 .name{
@@ -230,16 +226,16 @@ body{
 }
 
 .options{
-	width:200px;
-	height:390px;
+	width:400px;
+	height:450px;
 	color:white;
 	padding:15px 10px 0px 5px;
-
+	
 	float:left;
 	position: relative;
 	top:-340px;
 	left:20px;
-	border: 2px lightblue solid;
+	border: 0px lightblue solid;
 	border-radius:20px;
 }
 
@@ -266,4 +262,17 @@ html {
 body {
     height: 100%;
     overflow: auto;
+}
+
+button{
+	fill:red;
+}
+
+.setText{
+	text-align:center;
+	font-size:20px;
+}
+
+button{
+	color:red;
 }
