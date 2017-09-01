@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:500');
+
+body{
+	background-image:url(http://1.bp.blogspot.com/-cynjeO46IAM/UBUmNk0NnxI/AAAAAAAAAqg/jpqpb_LMn6U/s1600/tR2hW.jpg);
+	background-repeat: no-repeat;
+}
+
+.circle, .r1c, .r2c, .r3c, .r4c{
+	border: black 0px solid;
+	width: 90px;
+	height: 90px;
+	border-radius: 90px;
+	fill: lightred;
+
+	position: absolute;
+	margin: auto;
+
+	background-size: 100px 100px;
+	background-repeat: no-repeat;
+	background-position: -5px -5px;
+
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	transition: 0.1s ease-in-out;
+}
+
+.r1c, .r2c, .r3c, .r4c {
+	animation: around 29.9s infinite ease-in;
+	animation-direction:reverse
+}
+
+.circle{
+	background-image: url(https://media.giphy.com/media/Ry0QlB6DwmCZO/giphy.gif);
+	background-position: -9px -9px;
+}
+
+.r1c:hover, .r2c:hover, .r3c:hover, .r4c:hover{
+	width:108px;
+	height: 108px;
+	border-radius:108px;
+	transition: 0.07s ease-in;
+	background-size: 120px 120px;
+	background-position: -5.4px -5.4px;
+}
+
+.r1c{
+	position: relative;
+	overflow: hidden;
+
+	top: 200px;
+	background-image: url("http://icons.iconarchive.com/icons/xenatt/the-circle/512/App-Google-icon.png");
+}
+
+.r2c{
+	top: -400px;
+	background-image: url(https://www.shareicon.net/data/512x512/2015/09/30/109354_media_512x512.png);
+}
+
+.r3c{
+	left: 400px;
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png);
+}
+
+.r4c{
+	right: 400px;
+	background-image: url("https://lh3.googleusercontent.com/mIeBLLu8xOi-1bPbtRO_HYb5d1VchJDLDH4hebMO7R-GNOfueGDtHCKgPWFjwyCAORQ=w300");
+}
+
+.r1l, .r2l, .r3l, .r4l{
+	border: white 1px solid;
+	width: 0px;
+	height: 90px;
+	border-radius: 90px;
+	fill: lightred;
+
+	position: absolute;
+	margin: auto;
+
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+.r1l{
+	top: 200px;
+}
+.r2l{
+	top: -200px;
+}
+
+.r3l{
+	width: 90px;
+	height: 0px;
+
+	left: 200px;
+}
+
+.r4l{
+	width: 90px;
+	height: 0px;
+
+	left: -200px;
+}
+
+.parent {
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	animation: around 30s infinite ease;
+}
+
+@keyframes around{
+	0% {transform: rotate(0deg);}
+	25%	{transform: rotate(90deg);}
+
+	25% {transform: rotate(90deg);}
+	50%	{transform: rotate(180deg);}
+
+	50% {transform: rotate(180deg);}
+	75%	{transform: rotate(270deg);}
+
+	75% {transform: rotate(270deg);}
+	100%	{transform: rotate(360deg);}
+	}
+
+#wide{
+	color:white;
+	font-size: 60px;
+	font-family: 'Quicksand', sans-serif;
+	flex: 0.5;
+  background: lightblue;
+	background-color:rgba(51,153,255,0.5);
+}
+
+#narrow{
+	color:white;
+	font-size: 60px;
+	flex: 0.5;
+	font-family: 'Quicksand', sans-serif;
+
+  background: lightblue;
+	background-color:rgba(51,153,255,0.8);
+}
+
+.name{
+	position: relative;
+	right:-200px;
+	font-size: 60px;
+	font-family: 'Quicksand', sans-serif;
+}
+.rotate-text{
+	color:white;
+	font-size: 60px;
+	flex: 0.5;
+	font-family: 'Quicksand', sans-serif;
+
+  background: lightblue;
+	background-color:rgba(51,153,255,0.8);
+}
+
+#parent {
+  display: flex;
+}
+.inside{
+	color:rgba(153,254,255,1);
+
+
+}
+.rotate-text {
+  font: normal 2.5em/1.2 sans-serif;
+  background-color: rgba(51,153,255,0.65);
+	color:rgba(153,254,255,0.75);
+  height: 1.2em;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 0 0 .1em 0;
+}
+.rotate-text > span {
+  float: left;
+  margin-right: .3em;
+  height: 1.2em;
+}
+.rotate-text > span:last-of-type {
+  font-weight: 500;
+  display: inline-block;
+  color: red;
+  position: relative;
+  white-space: nowrap;
+  bottom: 0;
+  left: 0;
+  animation: ticker 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 4s;
+}
+
+@keyframes ticker {
+  0% {
+    bottom: 0;
+  }
+  10% {
+    bottom: 0;
+  }
+  20% {
+    bottom: 1.2em;
+  }
+  30% {
+    bottom: 1.2em;
+  }
+  40% {
+    bottom: 2.4em;
+  }
+  50% {
+    bottom: 2.4em;
+  }
+  60% {
+    bottom: 3.6em;
+  }
+  70% {
+    bottom: 3.6em;
+  }
+}
+
+.name{
+	color:white;
+}
+
+.options{
+	width:200px;
+	height:390px;
+	color:white;
+	padding:15px 10px 0px 5px;
+
+	float:left;
+	position: relative;
+	top:-340px;
+	left:20px;
+	border: 2px lightblue solid;
+	border-radius:20px;
+}
+
+.gtext, .atext, .ytext, .ftext{
+	border-radius: 20px;
+	background-color:rgba(255,255,255,0.5);
+	border: 0px;
+	width:140px;
+	height:25px;
+	color:white;
+	font-family: 'Quicksand', sans-serif;
+	font-size:20px;
+}
+
+li{
+	padding:7px;
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+}
