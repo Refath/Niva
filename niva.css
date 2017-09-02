@@ -40,7 +40,8 @@ body{
 }
 
 .r1c, .r2c, .r3c, .r4c {
-animation-direction:reverse;
+	animation: around 30s infinite ease-in; 	
+	animation-direction:reverse;
 }
 
 .r1c.off, .r2c.off, .r3c.off, .r4c.off {
