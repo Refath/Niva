@@ -137,7 +137,7 @@ animation-direction:reverse;
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
-	animation: around infinite;
+	animation: around 30s infinite;
 
 }
 
