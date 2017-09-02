@@ -343,6 +343,7 @@ transition:width .05s linear;
 z-index:1000;
 padding-top:20px;
 	transition:0.9s ease-out all;
+		padding-bottom:50px;
 }
 
 .featureName{
