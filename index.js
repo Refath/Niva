@@ -98,3 +98,7 @@ TimeLine.to(".parent", rotationSpeed, {
 	ease: Power0.easeNone,
 	force3D: true,
 }, "-=" + rotationSpeed);
+
+$("#Btn").click(function(){
+    $(".blurredBg").css("backgroundImage", "url('"+$("#ImageUrl").val()+"')");
+});
