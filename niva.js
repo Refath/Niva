@@ -59,14 +59,7 @@ $('.r3c').css('background-image', 'url(' + imageUrl + ')');});
 $('.r4c').css('background-image', 'url(' + imageUrl + ')');});
      });
 
-/**$('.noRotate').click ( function(){
-		function stopAnimation(".parent")
-{
-    $('.parent').css("-webkit-animation", "none");
-    $('.parent').css("animation", "none");
-}
-});**/
-
+	
 		$( "#stop" ).click(function() {
 			$( ".parent, .r1c, .r2c, .r3c, .r4c" ).addClass( "off" );
 		});
@@ -74,44 +67,34 @@ $('.r4c').css('background-image', 'url(' + imageUrl + ')');});
 			$( ".parent, .r1c, .r2c, .r3c, .r4c"  ).removeClass( "off" );
 		});
 
-   /** $(".speedtext").click(function() {
-        var newimg = $(this).val();
-           		        	$(".parent").css("animation-duration", newimg);
-
-    $(".speedSave").click(function() {
-         $(".speedChange").html(newimg);
-        });
-			
-    });
-
-$('.speedSave').click(function(){
-     var newimg = $(this).val();
-           		        	$(".parent").css("animation-duration", newimg); 
-	// restart animation
-    var me = this;
-    this.style.webkitAnimation = 'none';
-    setTimeout(function() {
-        me.style.webkitAnimation = '';
-    }, 10);
-});**/
-
-$('.speedSave').click(function() {
-    var el = $('.parent').addClass('custom');
-    setTimeout(function() {
-        el.removeClass('custom');
-    }, 1000);
-	var newimg = $(this).val();
-           		        	$(".parent").css("animation-duration", newimg); 
-
 	$(".bgtext").click(function(){
           var newimg = $(this).val();
-/**          $(body).css("background-image", "url("+newimg+")");**/
-$('body').css('background-image','url('+newimg+')');
+          $(body).css("background-image", "url("+newimg+")");
 				$('.bgSave').click ( function(){
 						$(".bgChange").html(newimg);
  
 				});
      });
 	
+var rotationSpeed = 3,
+		TimeLine = new TimelineMax({repeat:-1});
+
+$('.speedSave').click(function() {
+	rotationSpeed = $(".speedtext").val();
+	rotationSpeed != NaN ? rotationSpeed : 3
+	TimeLine.duration(rotationSpeed);
 });
 
+TimeLine.to(".rcc", rotationSpeed, {
+	rotation:-360,
+	transformOrigin:"center",
+	ease: Power0.easeNone,
+	force3D: true,
+});
+
+TimeLine.to(".parent", rotationSpeed, {
+	rotation:360,
+	transformOrigin:"center",
+	ease: Power0.easeNone,
+	force3D: true,
+}, "-=" + rotationSpeed);
