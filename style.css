@@ -435,3 +435,29 @@ padding:0;
 color:#fff;
 background-color:#5fa2db;
 }
+
+
+
+
+.blurredBg {
+    height:100%;
+    width:100%;
+    text-align:center;
+   	background-size:cover;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    position: absolute;
+    left:0;
+    top: 0;
+	align-content: no-repeat center center fixed; 
+	background-image: url("http://1.bp.blogspot.com/-cynjeO46IAM/UBUmNk0NnxI/AAAAAAAAAqg/jpqpb_LMn6U/s1600/tR2hW.jpg");
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
