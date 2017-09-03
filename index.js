@@ -117,6 +117,6 @@ $("#Btn").click(function(){
 
 vex.defaultOptions.className = 'vex-theme-os'
 vex.dialog.alert({
-    message: 'Hey there! Welcome to Niva! You can organize all your favorite websites, and access them with just a click. Why don’t we get started? :) Just hover over that Settings text to the left, and paste the URL of your favorite website!',
+    message: 'Hey! Here, you can organize favorite websites, and use them with just a click. Start by going to that settings text on the left. Then, click change.',
     className: 'vex-theme-flat-attack' // Overwrites defaultOptions
 })
