@@ -117,6 +117,6 @@ $("#Btn").click(function(){
 
 vex.defaultOptions.className = 'vex-theme-os'
 vex.dialog.alert({
-    message: 'Hey! Organize favorite websites, and use them with just a click. Start by hovering over that Settings text on the left. Click change.',
+    message: 'Hi! Click-&-Go to your favorite websites! Start by hovering over that Settings text on the left. Click change.',
     className: 'vex-theme-flat-attack' // Overwrites defaultOptions
 })
