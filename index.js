@@ -115,9 +115,8 @@ $("#Btn").click(function(){
     $(".blurredBg").css("backgroundImage", "url('"+$("#ImageUrl").val()+"')");
 });
 
-/**vex.defaultOptions.className = 'vex-theme-os'
+vex.defaultOptions.className = 'vex-theme-os'
 vex.dialog.alert({
     message: 'Hey there! Welcome to Niva! You can organize all your favorite websites, and access them with just a click. Why don’t we get started? :) Just hover over that Settings text to the left, and paste the URL of your favorite website!',
     className: 'vex-theme-flat-attack' // Overwrites defaultOptions
 })
-**/
