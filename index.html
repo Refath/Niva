@@ -35,6 +35,8 @@
 	
 <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	  
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/garlic.js/1.3.0/garlic.min.js"></script>
 </head>
 
 <div class = "blurredBg"> 
@@ -101,7 +103,7 @@
 				<h3>Settings</h3><hl><ul>
 				
 	 
-		<li class = "gChange">Google</li>
+	<!--	<li class = "gChange">Google</li>
 		<button class="gClick waves-effect waves-light green darken-2 btn">Change</button>
 <button class = "gSave waves-effect waves-light blue darken-2 btn">Done</button><input type = "text" class = "gtext" placeholder="Paste New URL" onkeydown = "if (event.keyCode == 13)
    document.getElementById('gSave').click()"    >
@@ -119,7 +121,28 @@
 		<button class = "speedSave waves-effect waves-light blue darken-2 btn">Done</button><input type = text class = "speedtext" placeholder="Change wheel speed">
 	 
 <li class = "bgChange">Background Image</li>
-<input id="ImageUrl" placeholder="Background Image URL"/> <button class = "waves-effect waves-light blue darken-2 btn" id="Btn">Go</span>
+<input id="ImageUrl" placeholder="Background Image URL"/> <button class = "waves-effect waves-light blue darken-2 btn" id="Btn">Go</span>-->
+	        <li class="gChange">Google</li>
+    <button class="gClick waves-effect waves-light green darken-2 btn">Change</button>
+    <button class="gSave waves-effect waves-light blue darken-2 btn">Done</button><input type="text" data-persist="garlic" method="POST" class="gtext" placeholder="Paste New URL" onkeydown="if (event.keyCode == 13)
+   document.getElementById('gSave').click()">
+
+    <li class="aChange">Amazon</li><button class="aClick waves-effect waves-light green darken-2 btn">Change</button>
+    <button class="aSave waves-effect waves-light blue darken-2 btn">Done</button><input type="text" class="atext" data-persist="garlic" method="POST" placeholder="Paste New URL">
+
+    <li class="yChange">Youtube</li><button class="yClick waves-effect waves-light green darken-2 btn">Change</button>
+    <button class="ySave waves-effect waves-light blue darken-2 btn">Done</button><input type=t ext class="ytext" placeholder="Paste New URL" data-persist="garlic" method="POST">
+
+    <li class="fChange">Facebook</li><button class="fClick waves-effect waves-light green darken-2 btn">Change</button>
+    <button class="fSave waves-effect waves-light blue darken-2 btn">Done</button><input type=t ext class="ftext" placeholder="Paste New URL"data-persist="garlic" method="POST">
+
+    <li class="speedChange">Speed</li><button class="speedClick waves-effect waves-light green darken-2 btn">Change</button>
+    <button class="speedSave waves-effect waves-light blue darken-2 btn">Done</button><input type=t ext class="speedtext" placeholder="Change wheel speed"data-persist="garlic" method="POST">
+
+    <li class="bgChange">Background Image</li>
+    <input id="ImageUrl" placeholder="Background Image URL" /> <button class="waves-effect waves-light blue darken-2 btn" id="Btn"data-persist="garlic" method="POST">Go</span>
+
+
 </ul>
 </div>
 </nav>
