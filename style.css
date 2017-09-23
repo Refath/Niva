@@ -39,7 +39,7 @@ body{
 	
 }
 
-.r1c, .r2c, .r3c, .r4c {
+.r1c, .r2c, .r3c, .r4c,.circle  {
 animation: around infinite;
 animation-duration: 30s;
 animation-direction:reverse;
@@ -55,8 +55,9 @@ animation-direction:reverse;
 }
 
 .circle{
-	background-image: url(https://media.giphy.com/media/Ry0QlB6DwmCZO/giphy.gif);
-	background-position: -9px -9px;
+		background-image: url(https://qph.ec.quoracdn.net/main-qimg-a1bd7842675b4c551751a7bb50da3667);
+	background-position: -5px -6px;
+		opacity:0.9;
 }
 
 .r1c:hover, .r2c:hover, .r3c:hover, .r4c:hover{
