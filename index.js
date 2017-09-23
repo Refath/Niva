@@ -85,6 +85,21 @@ $('.r4c').css('background-image', 'url(' + imageUrl + ')');});
  
 				});
      });
+
+$('.simple').click(function() {
+    $('#wide, #narrow, .r1c, .r2c, .r3c, .r4c,.r1l, .r2l, .r3l, .r4l,.name,.social li').css({
+        'display': 'none',
+    });
+		$(".main-menu").css({
+			'top':'0px',
+			'height':'100%',
+		});
+	$(".blurredBg").css({
+			'background-image':'url(http://i.imgur.com/b3eE7TR.gif)',
+	});
+});
+
+
 	
 var rotationSpeed = 30,
 		TimeLine = new TimelineMax({repeat:-1});
