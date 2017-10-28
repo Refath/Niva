@@ -13,5 +13,7 @@ Simple enough for the average user, and yet complex enough for powerful applicat
 ## Reviews
 Some user reviews: 
 > Great tool for bookmarking. I had to use it awhile before making a judgement of it. Very useful. One minor drawback is that the speed of the wheel makes it so that eventually the logos of the website becomes upside after a while. **Abir Hossain**
+
 > Really useful app. Great for a homepage and for visually stunning design. Very well done. Love using it. **Become Betty**
+
 > What can I say? This is one of those apps that you don't realize you need until it comes your way. Loving it. Hope others feel the same. **Rashidul Bari**
