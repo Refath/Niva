@@ -8,3 +8,4 @@ Simple enough for the average user, and yet complex enough for powerful applicat
 - Can change rotation speed of wheel
 - Edit up to 4 bookmarks on the wheel
 - Bookmarks auto-change image to website's favicon
+- Background can be changed to static image, or gif
