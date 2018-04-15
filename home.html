@@ -159,10 +159,7 @@ function checkLoginState() {
 <h2 class="name">
 	~ Refath 			
 </h2>
-	<fb:login-button 
-  scope="public_profile,email"
-  onlogin="checkLoginState();">
-</fb:login-button>
+	
 
 <div class="area"></div>
 <nav class="main-menu">
@@ -286,7 +283,10 @@ function checkLoginState() {
 			<button class="waves-effect waves-light blue darken-2 btn" id="Btn">Go</button>
 			
 			<br>
-			
+			<fb:login-button 
+  scope="public_profile,email"
+  onlogin="checkLoginState();">
+</fb:login-button><br>
 			<button class="simple waves-effect waves-light green darken-2 btn">Simplify</button>
 			</ul>
 		<!-- Docs at http://simpleweatherjs.com -->
