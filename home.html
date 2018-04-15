@@ -57,6 +57,44 @@
 </div>
 
 
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '{179364989316075}',
+      cookie     : true,
+      xfbml      : true,
+      version    : '{v2.12}'
+    });
+      
+
+		FB.getLoginStatus(function(response) {
+				statusChangeCallback(response);
+		});
+		
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/all.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+	
+	function statusChangeCallback(response){
+		if(response.status === "connected"){
+			console.log("Logged in and authenticated.");
+		} else {
+			console.log("Not authenticated. ")
+		}
+	}
+	
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
+</script>
 <div id="parent">
 	<div class="animated slideInLeft" id="wide">
 		<center>Hi.</center>
@@ -119,7 +157,11 @@
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <h2 class="name">
-	~ Refath</h2>
+	~ Refath 			
+<fb:login-button 
+  scope="public_profile,email"
+  onlogin="checkLoginState();">
+</fb:login-button></h2>
 
 <div class="area"></div>
 <nav class="main-menu">
