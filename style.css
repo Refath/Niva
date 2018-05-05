@@ -65,9 +65,11 @@ animation-direction:reverse;
 }
 
 .circle{
-	background-image: url(https://qph.ec.quoracdn.net/main-qimg-a1bd7842675b4c551751a7bb50da3667);
-	background-position: -5px -6px;
+	background-image: url(http://www.thewaythefutureblogs.com/wp-content/uploads/2010/12/brooklyntechlogo.gif);
+	background-position: -25px -25px;
 		opacity:0.9;
+	    background-size: 140px 140px;
+
 }
 
 .r1c:hover, .r2c:hover, .r3c:hover, .r4c:hover{
@@ -82,12 +84,16 @@ animation-direction:reverse;
 .r1c{	
 	overflow: hidden;
 	top: 400px;
-	background-image: url("http://icons.iconarchive.com/icons/xenatt/the-circle/512/App-Google-icon.png");
+	background-image: url("https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/9d/d5/b7/9dd5b7b4-349e-ae30-3467-76028bd4e692/source/60x60bb.jpg");
+	background-size: 90px 90px;	
+	background-position: 0px 0px;
 }
 
 .r2c{
 	top: -400px;
-	background-image: url(https://www.shareicon.net/data/512x512/2015/09/30/109354_media_512x512.png);
+	background-image: url(http://sphweb.bumc.bu.edu/otlt/mph-modules/universaldesign/moodle_logo.png);
+		background-size: 80px 80px;	
+	background-position: 0px 0px;
 }
 
 .r3c{
@@ -97,7 +103,7 @@ animation-direction:reverse;
 
 .r4c{
 	right: 400px;
-	background-image: url("https://lh3.googleusercontent.com/mIeBLLu8xOi-1bPbtRO_HYb5d1VchJDLDH4hebMO7R-GNOfueGDtHCKgPWFjwyCAORQ=w300");
+	background-image: url("https://cdn4.iconfinder.com/data/icons/happily-colored-snlogo/128/gmail-email-mail-logo-circle-material.png");
 }
 
 .r1l, .r2l, .r3l, .r4l{
@@ -190,12 +196,12 @@ animation-direction:reverse;
   display: flex;
 }
 #narrow {
-  flex: 0 0 85%;
+  flex: 0 0 35%;
 }
 html, body {margin: 0; height: 100%; overflow: hidden}
 
 #wide {
-  flex: 0 0 15%;
+  flex: 0 0 65%;
 }
 .name{
 	position: relative;

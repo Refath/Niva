@@ -290,7 +290,7 @@ $(document).ready(function() {
         $('#userTime').html("Time: &nbsp;"+userTimeStamp);
         $('#userLocation').html("Location: &nbsp;"+userCity+", "+userCountry);
         $('#userCountry').html("Country: &nbsp;"+userCountry);
-        $('#userTemp').html("Temperature: &nbsp;"+tempCelsius+" \xB0"+"C");
+        $('#userTemp').html("It's &nbsp;"+tempCelsius+" \xB0"+"C");
         $('#tempUnitSwitch').click(function(){
           if(tempSwitch===false) {
             $('#userTemp').html("It's &nbsp;"+tempCelsius+" \xB0"+"C");
@@ -302,7 +302,7 @@ $(document).ready(function() {
           }
         });
         $('#userWeatherType').html("Conditions: &nbsp;"+userWeatherType);    
-        $('#userWindSpeed').html("Wind Speed: &nbsp;"+userWindSpeed+" m/S");
+        $('#userWindSpeed').html("Wind: &nbsp;"+userWindSpeed+" m/S");
         $('#windUnitSwitch').click(function(){
           if(windSpeedSwitch===false) {
             $('#userWindSpeed').html("Wind Speed: &nbsp;"+userWindSpeed+" m/S");
