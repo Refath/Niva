@@ -1,151 +1,84 @@
-<a href="" class="show-prompt-box"><h1>Access</h1></a>
-<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<div class="overlay"></div>
-    <div class="prompt-wrap">
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Niva</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
 
-        <div class="prompt-box">
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
 
-          <form>
-              <span class="close" onclick="closeModal();"></span>
-            <p>Enter password given by Refath Bari to access Niva</p>
-            <p class="code-error">Invalid Code</p>
-            <input name="clients" class="clients" type="text" placeholder="Code">
-            <button class="btn">Enter</button>
-          </form>
-        </div>
-    </div>
+				<!-- One -->
+					<section class="banner style3 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>Niva</h1>
+							<p class="major">An all-in-one productivity app</a>.</p>
+							<ul class="actions vertical">
+								<a href="#first" class="button big wide smooth-scroll-middle">Brooklyn Tech</a>
+								<a href="#first" class="button big wide smooth-scroll-middle">Beta Tester</a>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="https://qph.ec.quoracdn.net/main-qimg-a1bd7842675b4c551751a7bb50da3667" alt="" />
+						</div>
+					</section>
 
-<style>
+								<!-- Seven -->
+					<section class="wrapper style1 align-center">
+						<div class="inner medium">
+							<h2>Get in touch</h2>
+							<form method="post" action="#">
+								<div class="field half first">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" value="" />
+								</div>
+								<div class="field half">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email" value="" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="6"></textarea>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+								</ul>
+							</form>
 
-.overlay {
-  display: none;
-  background: rgba(0, 0, 0, .6);
-  position:fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
+						</div>
+					</section>
 
-.prompt-wrap {
-    display: none;
-    background: transparent;
-    position: absolute;
-    width: 350px;
-    margin: 0 auto;
-    top: 0;
-    left: 0;
-    right: 0;
-}
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+							<p>&copy; Niva. Design: <a href="">Refath Bari</a>.</p>
+						</div>
+					</footer>
 
-.prompt-box {
-  display: none;
-  padding: 50px;
-  background: #f7f7f7;
-  max-width: 350px;
-  width: 100%;
-  margin: 20px auto;
-  color: 070707;
-  position: fixed;
-  z-index: 999999999;
-  margin: 80px auto;
-  border-radius: 3px;
+			</div>
 
-      p {
-          color: #070707;
-      }
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-     button {
-         width: 98%;
-     }
-
-     &.shake {
-         animation: shake .5s linear;
-     }
-
-     .close:after {
-         content: '';
-        height: 20px;
-        width: 20px;
-        background: url(../img/x-thin.svg) top left no-repeat;
-        background-size: 100%;
-        position: absolute;
-        right: 20px;
-        top: 12px;
-        -webkit-transform: rotate(180deg);
-        transform: rotate(180deg);
-        cursor: pointer;
-     }
-}
-
-.code-error {
-    color: red !important;
-    display: none;
-
-        &.is-error {
-            display: block;
-            animation: shake .5s linear;
-        }
- }
-
- @-webkit-keyframes shake {
-    8%, 41% {
-        transform: translateX(-10px);
-    }
-    25%, 58% {
-        transform: translateX(10px);
-    }
-    75% {
-        transform: translateX(-5px);
-    }
-    92% {
-        transform: translateX(5px);
-    }
-    0%, 100% {
-        transform: translateX(0);
-    }
-}
-
-</style>
-
-<script>
-//Password protect form page
-(function() {
-
-//Display modal on click
-$('.show-prompt-box').click(function(e){
-  e.preventDefault();
-  $('.overlay, .prompt-box, .prompt-wrap').fadeIn();
-});
-
-//Fade out overlay and prompt-box
-$('.overlay, .close').click(function(){
-  $('.overlay, .prompt-box').fadeOut();
-  $('.code-error').removeClass('is-error');
-  e.stopPropagation();
-});
-
-
-//Get value and compare to password
-$('.prompt-box form').submit(function(e) {
-  e.preventDefault();
-  var codeWord = $('.clients').val();
-
-
-  if (codeWord.toLowerCase() == "600613") {
-
-window.open("https://refath.github.io/Niva/home");
-    //location.href = "/path-to-page/";
-
-} else {
-    $('.code-error').addClass('is-error');
-    $('.prompt-box').addClass('shake');
-    setTimeout(function() {
-        $('.prompt-box').removeClass('shake')
-    }, 1000);
-
-}
-});
-
-})();
-</script>
+	</body>
+</html>
