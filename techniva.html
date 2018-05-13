@@ -103,7 +103,7 @@ function checkLoginState() {
 <div id="parent">
 	<div class="animated slideInLeft" id="wide">
 		<center>Hey 
-<div class = "g-signin2" data-onsuccess="onSignIn"></div>	</div>
+			<div id = "googleName"><div class = "g-signin2" data-onsuccess="onSignIn"></div>	</div></div>
 
 	<div class="tooltipped animated lightSpeedIn" data-position="bottom" data-delay="50" data-tooltip="Hey there! Just hover over that Settings on the left :) Trust me on this one. " id="narrow">
 		<center>
@@ -349,8 +349,11 @@ function checkLoginState() {
     </div>-->
 		
 <script>
- function onSignIn(googleUser) {
+ 
+function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
+  var profileName = document.getElementById("googleName);
+  profileName.innerHTML=profile.getName();
   console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
   console.log('Name: ' + profile.getName());
   console.log('Image URL: ' + profile.getImageUrl());
