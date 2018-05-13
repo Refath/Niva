@@ -352,7 +352,7 @@ function checkLoginState() {
  
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
-  var profileName = document.getElementById("googleName);
+  var profileName = document.getElementById("googleName");
   profileName.innerHTML=profile.getName();
   console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
   console.log('Name: ' + profile.getName());
