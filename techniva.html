@@ -96,7 +96,10 @@ function checkLoginState() {
 
 <div id="parent">
 	<div class="animated slideInLeft" id="wide">
-		<center>Hey Refath!</center>
+		<center>Hey <meta name="google-signin-client_id" content="792364251901-glbt8kr0n2k1bhak1ttku75g5c2gs2fi.apps.googleusercontent.com.apps.googleusercontent.com"><script src="https://apis.google.com/js/platform.js" async defer></script>
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+<a href="#" onclick="signOut();">Sign out</a>!</center>
 	</div>
 
 	<div class="tooltipped animated lightSpeedIn" data-position="bottom" data-delay="50" data-tooltip="Hey there! Just hover over that Settings on the left :) Trust me on this one. " id="narrow">
@@ -341,10 +344,7 @@ function checkLoginState() {
       
     
     </div>-->
-		<meta name="google-signin-client_id" content="792364251901-glbt8kr0n2k1bhak1ttku75g5c2gs2fi.apps.googleusercontent.com.apps.googleusercontent.com"><script src="https://apis.google.com/js/platform.js" async defer></script>
-<div class="g-signin2" data-onsuccess="onSignIn"></div>
-
-<a href="#" onclick="signOut();">Sign out</a>
+		
 <script>
  function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
