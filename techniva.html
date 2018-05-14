@@ -353,11 +353,10 @@ function checkLoginState() {
     
     </div>-->
 	<script>
+ 
+function onSignIn(googleUser) {
  var profile = googleUser.getBasicProfile();
  var profileName = document.getElementById("googleName");		
-
-function onSignIn(googleUser) {
- 
   profileName.innerHTML="Hey "+profile.getName();
   console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
   console.log('Name: ' + profile.getName());
@@ -375,7 +374,7 @@ function signOut() {
 var weekNumMod = (moment().week())%2;
 var day = moment().day();
 var getPeriod = document.getElementById("isPeriod");
-var getNameFromGoogle = profile.getName();
+var getNameFromGoogle = document.getElementById("googleName");
 
 if (weekNumMod === 1 && day === 1 && getNameFromGoogle === "Refath Bari"){
 	document.getElementById("dayNumber").innerHTML="Day 1";
