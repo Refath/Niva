@@ -359,7 +359,8 @@ function onSignIn(googleUser) {
  var profile = googleUser.getBasicProfile();
  var profileName = document.getElementById("googleName");
 	var face = document.getElementById("circleface");
-face.style.backgroundImage = profile.getImageUrl();
+//face.style.backgroundImage = profile.getImageUrl();
+$('#circleface').css('background-image', profile.getImageUrl());
 	
   profileName.innerHTML="Hey "+profile.getName();
   console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
