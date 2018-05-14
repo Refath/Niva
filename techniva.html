@@ -386,8 +386,11 @@ if (weekNumMod === 1 && day === 1 && getNameFromGoogle === "Refath Bari"){
 	getPeriod.innerHTML="No Gym";
 }else if (weekNumMod === 1 && day === 6 && getNameFromGoogle === "Refath Bari"){
 	document.getElementById("dayNumber").innerHTML="Saturday";
+	getPeriod.innerHTML="No Gym";
 }else if (weekNumMod === 1 && day === 0 && getNameFromGoogle === "Refath Bari"){
 	document.getElementById("dayNumber").innerHTML="Sunday";
+	getPeriod.innerHTML="No Gym";
+
 }else{
 	document.getElementById("dayNumber").innerHTML="Somethig's wrong. Report it to rbari4690@bths.edu.";
 }
@@ -409,8 +412,10 @@ if (weekNumMod === 0 && day === 1 && getNameFromGoogle === "Refath Bari"){
 	getPeriod.innerHTML="You have Gym";
 }else if (weekNumMod === 0 && day === 6 && getNameFromGoogle === "Refath Bari"){
 	document.getElementById("dayNumber").innerHTML="Saturday";
+	getPeriod.innerHTML="No Gym";
 }else if (weekNumMod === 0 && day === 0 && getNameFromGoogle === "Refath Bari"){
 	document.getElementById("dayNumber").innerHTML="Sunday";
+	getPeriod.innerHTML="No Gym";
 }else{
 document.getElementById("dayNumber").innerHTML="Somethig's wrong. Report it to rbari4690@bths.edu.";
 }
