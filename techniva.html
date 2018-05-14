@@ -127,7 +127,7 @@ function checkLoginState() {
 <div class="parent">
 	<div id="weather"></div>
 
-<a href="https://www.bths.edu">	<div class="circle">
+<a href="https://www.bths.edu">	<div class="circle" id = "circleface">
 	</div></a>
 
 	<a href="http://pupilpath.skedula.com" class="glink">
@@ -355,6 +355,9 @@ function checkLoginState() {
 	<script>
  
 function onSignIn(googleUser) {
+var face = document.getElementById("circleface");
+elem.style.backgroundImage = "profile.getImageUrl()";
+	
  var profile = googleUser.getBasicProfile();
  var profileName = document.getElementById("googleName");		
   profileName.innerHTML="Hey "+profile.getName();
