@@ -386,9 +386,7 @@ if (weekNumMod === 0 && day === 1){
 	document.getElementById("dayNumber").innerHTML="Sunday";
 }else{
 document.getElementById("dayNumber").innerHTML="Somethig's wrong. Report it to rbari4690@bths.edu.";
-}</script>
-<script>
- 
+}
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
   var profileName = document.getElementById("googleName");
@@ -403,7 +401,25 @@ function onSignIn(googleUser) {
     auth2.signOut().then(function () {
       console.log('User signed out.');
     });
-  }
+  }		
+</script>
+<script>
+ /**
+function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  var profileName = document.getElementById("googleName");
+  profileName.innerHTML="Hey "+profile.getName();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+}
+	function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }**/
 </script>
 
 				
