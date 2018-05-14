@@ -352,7 +352,9 @@ function checkLoginState() {
       
     
     </div>-->
-	<script>function onSignIn(googleUser) {
+	<script>
+		
+function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
   var profileName = document.getElementById("googleName");
   profileName.innerHTML="Hey "+profile.getName();
@@ -361,46 +363,60 @@ function checkLoginState() {
   console.log('Image URL: ' + profile.getImageUrl());
   console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 }
-	function signOut() {
+
+function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {
       console.log('User signed out.');
     });
   }	
-		var weekNumMod = (moment().week())%2;
-var day = moment().day();
 
-if (weekNumMod === 1 && day === 1){
+var weekNumMod = (moment().week())%2;
+var day = moment().day();
+var getPeriod = document.getElementById("isPeriod");
+var getNameFromGoogle = profile.getName();
+
+if (weekNumMod === 1 && day === 1 && getNameFromGoogle === "Refath Bari"){
 	document.getElementById("dayNumber").innerHTML="Day 1";
-}else if (weekNumMod === 1 && day === 2){
+	getPeriod.innerHTML="No Gym";
+}else if (weekNumMod === 1 && day === 2 && getNameFromGoogle === "Refath Bari"){
 	document.getElementById("dayNumber").innerHTML="Day 2";
-}else if (weekNumMod === 1 && day === 3){
+	getPeriod.innerHTML="You have Gym";
+}else if (weekNumMod === 1 && day === 3 && getNameFromGoogle === "Refath Bari"){
 	document.getElementById("dayNumber").innerHTML="Day 3";
-}else if (weekNumMod === 1 && day === 4){
+	getPeriod.innerHTML="No Gym";
+}else if (weekNumMod === 1 && day === 4 && getNameFromGoogle === "Refath Bari"){
 	document.getElementById("dayNumber").innerHTML="Day 4";
-}else if (weekNumMod === 1 && day === 5){
+	getPeriod.innerHTML="You have Gym";
+}else if (weekNumMod === 1 && day === 5 && getNameFromGoogle === "Refath Bari"){
 	document.getElementById("dayNumber").innerHTML="Day 5";
-}else if (weekNumMod === 1 && day === 6){
+	getPeriod.innerHTML="No Gym";
+}else if (weekNumMod === 1 && day === 6 && getNameFromGoogle === "Refath Bari"){
 	document.getElementById("dayNumber").innerHTML="Saturday";
-}else if (weekNumMod === 1 && day === 0){
+}else if (weekNumMod === 1 && day === 0 && getNameFromGoogle === "Refath Bari"){
 	document.getElementById("dayNumber").innerHTML="Sunday";
 }else{
 	document.getElementById("dayNumber").innerHTML="Somethig's wrong. Report it to rbari4690@bths.edu.";
 }
 
-if (weekNumMod === 0 && day === 1){
+if (weekNumMod === 0 && day === 1 && getNameFromGoogle === "Refath Bari"){
 	document.getElementById("dayNumber").innerHTML="Day 6";
-}else if (weekNumMod === 0 && day === 2){
+	getPeriod.innerHTML="You have Gym";
+}else if (weekNumMod === 0 && day === 2 && getNameFromGoogle === "Refath Bari"){
 	document.getElementById("dayNumber").innerHTML="Day 7";
-}else if (weekNumMod === 0 && day === 3){
+	getPeriod.innerHTML="No Gym";
+}else if (weekNumMod === 0 && day === 3 && getNameFromGoogle === "Refath Bari"){
 	document.getElementById("dayNumber").innerHTML="Day 8";
-}else if (weekNumMod === 0 && day === 4){
+	getPeriod.innerHTML="You have Gym";
+}else if (weekNumMod === 0 && day === 4 && getNameFromGoogle === "Refath Bari"){
 	document.getElementById("dayNumber").innerHTML="Day 9";
-}else if (weekNumMod === 0 && day === 5){
+	getPeriod.innerHTML="No Gym";
+}else if (weekNumMod === 0 && day === 5 && getNameFromGoogle === "Refath Bari"){
 	document.getElementById("dayNumber").innerHTML="Day 10";
-}else if (weekNumMod === 0 && day === 6){
+	getPeriod.innerHTML="You have Gym";
+}else if (weekNumMod === 0 && day === 6 && getNameFromGoogle === "Refath Bari"){
 	document.getElementById("dayNumber").innerHTML="Saturday";
-}else if (weekNumMod === 0 && day === 0){
+}else if (weekNumMod === 0 && day === 0 && getNameFromGoogle === "Refath Bari"){
 	document.getElementById("dayNumber").innerHTML="Sunday";
 }else{
 document.getElementById("dayNumber").innerHTML="Somethig's wrong. Report it to rbari4690@bths.edu.";
