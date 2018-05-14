@@ -356,7 +356,7 @@ function checkLoginState() {
  
 function onSignIn(googleUser) {
 var face = document.getElementById("circleface");
-face.style.backgroundImage = "profile.getImageUrl()";
+face.style.backgroundImage = profile.getImageUrl();
 	
  var profile = googleUser.getBasicProfile();
  var profileName = document.getElementById("googleName");		
