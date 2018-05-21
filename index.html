@@ -62,6 +62,22 @@
 					</footer>
 
 			</div>
+<script>
+npm install clockwork
+
+var clockwork = require('clockwork')({key:'111d78976e19e25e132777764a1bb433408bd88b'});
+
+
+// Send a message
+clockwork.sendSms({ To: '17188448461', Content: 'Niva Test!'}, function(error, resp) {
+    if (error) {
+    	console.log('Something went wrong', error);
+	} else {
+		console.log('Message sent to',resp.responses[0].to);
+		console.log('MessageID was',resp.responses[0].id);
+	}
+});
+</script>
 
 		<!-- Scripts -->
 			<script src="jquery.min.js"></script>
